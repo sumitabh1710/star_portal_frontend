@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./common/Navbar";
+import Academy from "./component/Academy";
+import BasicCrypto from "./component/BasicCrypto";
+import CryptoDict from "./component/CryptoDict";
+import Footer from "./component/Footer";
+import Roadmap from "./component/Roadmap";
+import ToFollow from "./component/ToFollow";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App relative outfit-font bg-black min-h-screen">
+      <Navbar />
+      <Academy />
+      <Roadmap />
+      <ToFollow />
+      <CryptoDict />
+      <Footer />
     </div>
   );
 }
